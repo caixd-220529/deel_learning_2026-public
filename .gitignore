@@ -1,0 +1,16 @@
+.vscode/launch.json
+**/__pycache__/
+
+qichen/data/
+qichen/output/
+qichen/temp/
+qichen/model/
+
+qinsi/data/
+qinsi/temp/
+qinsi/output/
+*.pdf
+
+filebrowser/
+
+public/
