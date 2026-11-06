@@ -1,7 +1,7 @@
 # 推理结果提交说明
 
 
-对于使用 YOLO 模型的同学，**强烈推荐直接使用 `src/yolo_inference.py` 脚本生成推理结果**。对于使用其他目标检测模型的同学，**请务必确保提交文件符合规定的格式要求**。
+对于使用 YOLO 模型的同学，**强烈推荐直接使用 `src/object_detection/yolo_inference.py` 脚本生成推理结果**。对于使用其他目标检测模型的同学，**请务必确保提交文件符合规定的格式要求**。
 
 推理结果的评估程序将使用 [Pydantic](https://pydantic.dev/docs/validation/latest/get-started/) 对提交文件进行类型校验，对于不符合要求的文件，代码将直接报错，无法参与评估。具体的类型定义请参阅 `yolo_inference.py` 中的 `Detection result schema` 区域，其中通过 `BaseModel` 子类定义了推理结果的数据结构。
 
@@ -147,7 +147,7 @@ if __name__ == "__main__":
 
 ## 评价指标
 
-本次课程设计采用 [mAP50-95](https://docs.ultralytics.com/guides/yolo-performance-metrics#class-wise-metrics)（mean Average Precision，平均精度均值）作为模型性能的评价指标。评价代码位于 `src/yolo_evaluation.py`，**以该代码输出的 `box_level.map` 作为最终评价分数**。
+本次课程设计采用 [mAP50-95](https://docs.ultralytics.com/guides/yolo-performance-metrics#class-wise-metrics)（mean Average Precision，平均精度均值）作为模型性能的评价指标。评价代码位于 `src/object_detection/yolo_evaluation.py`，**以该代码输出的 `box_level.map` 作为最终评价分数**。
 
 ### mAP50-95
 
