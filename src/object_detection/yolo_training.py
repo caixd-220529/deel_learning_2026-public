@@ -2,11 +2,12 @@
 
 # 2026-11-06
 
+The public detection package is src.object_detection; import and CLI paths use this directory name.
 Canonical implementation moved here from qichen/src/object_detection/yolo_training.py. Legacy qichen modules re-
 export these APIs.
 This public module depends only on sibling public modules and installed third-party packages.
-Run from the public repository: python -m src.objection_detection.yolo_training --help
-Direct execution is also supported: python src/objection_detection/yolo_training.py --help
+Run from the public repository: python -m src.object_detection.yolo_training --help
+Direct execution is also supported: python src/object_detection/yolo_training.py --help
 Public defaults are rooted in this repository and use the portable yolo26n.pt model name.
 The legacy entry point preserves qichen dataset/output/model defaults through a Config subclass.
 

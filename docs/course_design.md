@@ -115,7 +115,7 @@ bash shell/v0807/install_yolo.sh
 
 本次课程设计不强制要求同学们提交测试结果，但是否提交测试结果以及最终测试成绩均会作为课程设计评分的参考依据。
 
-同学们可以使用本项目提供的 `qichen/src/objection/object_detection/yolo_inference.py` 脚本，生成模型在测试集上的推理结果。对于使用其他目标检测模型的同学，提交文件的格式**必须**与 `yolo_inference.py` 的输出格式保持一致，否则将无法正常参与打榜排名。
+同学们可以使用本项目提供的 `src/object_detection/yolo_inference.py` 脚本，生成模型在测试集上的推理结果。对于使用其他目标检测模型的同学，提交文件的格式**必须**与 `yolo_inference.py` 的输出格式保持一致，否则将无法正常参与打榜排名。
 
 具体的测试结果提交方式及相关要求，请参阅 [submit_label.md](https://chatgpt.com/g/g-p-6a851139bd848191a3217d0e0c330333-deep-learning-2026/c/submit_label.md)。
 

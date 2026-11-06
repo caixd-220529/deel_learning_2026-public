@@ -2,11 +2,12 @@
 
 # 2026-11-06
 
+The public detection package is src.object_detection; import and CLI paths use this directory name.
 Canonical implementation moved here from qichen/src/object_detection/yolo_evaluation.py. Legacy qichen modules re-
 export these APIs.
 This public module depends only on sibling public modules and installed third-party packages.
-Run from the public repository: python -m src.objection_detection.yolo_evaluation --help
-Direct execution is also supported: python src/objection_detection/yolo_evaluation.py --help
+Run from the public repository: python -m src.object_detection.yolo_evaluation --help
+Direct execution is also supported: python src/object_detection/yolo_evaluation.py --help
 
 Evaluate exported YOLO object-detection boxes against YOLO labels.
 """
@@ -35,7 +36,7 @@ else:
 
     sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
     from src.apply_label import Annotation, read_annotations
-    from src.objection_detection.yolo_inference import (
+    from src.object_detection.yolo_inference import (
         RESULT_FILE_NAME,
         ImagePrediction,
         InferenceResult,
